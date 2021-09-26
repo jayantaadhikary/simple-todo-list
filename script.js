@@ -10,12 +10,23 @@ function inputLength() {
   return input.value.length;
 }
 
+function removeParent(event) {
+  //function to remove the item in the list
+  event.target.parentNode.remove();
+}
+
 function createListElement() {
   // Function to add the input as a list
   var li = document.createElement("li");
   li.appendChild(document.createTextNode(input.value));
   ul.appendChild(li);
   input.value = "";
+
+  // Creating the delete button.
+  var button = document.createElement("button");
+  button.appendChild(document.createTextNode("Delete!"));
+  li.appendChild(button);
+  button.onclick = removeParent;
 }
 
 button.addEventListener("click", function () {
