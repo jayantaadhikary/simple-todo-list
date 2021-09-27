@@ -1,4 +1,4 @@
-I am a beginner in JavaScript, I started learning DOM (Document Object Model) recently. I made this simple & basic to-do list while learning the basics of DOM.
+I made this simple & basic to-do list while learning the basics of DOM.
 
 **Click on the item you entered in the list to strike through it. Click the delete option to remove the item from the list.
 
